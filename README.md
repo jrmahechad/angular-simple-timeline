@@ -4,6 +4,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 It presents a simple timeline using flexbox
 
+![image](https://user-images.githubusercontent.com/5782744/52368253-fb4b2400-2a1b-11e9-92d0-b9220b6cb8d6.png)
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
