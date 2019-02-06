@@ -1,0 +1,75 @@
+<div class="container">
+
+  <div class="block" ng *ngFor="let item of items;let i = index" [ngClass]="{'block--flipped': item.flipped}">
+      <div class="block__hidden"></div>
+      <div class="block__divider">
+        <div class="line-top" [ngClass]="{'active': checkPrevItemActive(i), 'hide': isFirstItem(i)} " ></div>
+        <div class="marker" [ngClass]="{'active': item.active}"></div>
+        <div class="line-bottom" [ngClass]="{'active': item.active, 'hide': isLastItem(i)}" ></div>
+      </div>
+      <div class="block__content">
+        <h3>{{item.text}}</h3>
+      </div>
+  </div>
+
+  <!--<div class="block">
+    <div class="block__hidden"></div>
+    <div class="block__divider">
+      <div class="line-top"></div>
+      <div class="marker"></div>
+      <div class="line-bottom"></div>
+    </div>
+    <div class="block__content">
+      <h3>First Year</h3>
+    </div>
+  </div>
+
+  <div class="block block--flipped">
+    <div class="block__hidden"></div>
+    <div class="block__divider">
+      <div class="line-top"></div>
+      <div class="marker"></div>
+      <div class="line-bottom"></div>
+    </div>
+    <div class="block__content">
+      <h3>Seconed Year</h3>
+    </div>
+  </div>
+
+  <div class="block ">
+    <div class="block__hidden"></div>
+    <div class="block__divider">
+      <div class="line-top"></div>
+      <div class="marker"></div>
+      <div class="line-bottom"></div>
+    </div>
+    <div class="block__content">
+      <h3>Third Year</h3>
+    </div>
+  </div>
+
+  <div class="block block--flipped">
+    <div class="block__hidden"></div>
+    <div class="block__divider">
+      <div class="line-top"></div>
+      <div class="marker"></div>
+      <div class="line-bottom"></div>
+    </div>
+    <div class="block__content">
+      <h3>Fourth Year</h3>
+    </div>
+  </div>
+
+  <div class="block ">
+    <div class="block__hidden"></div>
+    <div class="block__divider">
+      <div class="line-top"></div>
+      <div class="marker"></div>
+      <div class="line-bottom"></div>
+    </div>
+    <div class="block__content">
+      <h3>Fifth Year</h3>
+    </div>
+  </div>
+</div>
+-->
