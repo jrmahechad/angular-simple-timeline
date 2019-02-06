@@ -4,7 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 It presents a simple timeline using flexbox
 
-![image](https://user-images.githubusercontent.com/5782744/52368253-fb4b2400-2a1b-11e9-92d0-b9220b6cb8d6.png)
+![image](https://user-images.githubusercontent.com/5782744/52369383-9218e000-2a1e-11e9-89b7-93ef0ed7ebb2.png)
+
 
 
 ## Development server
