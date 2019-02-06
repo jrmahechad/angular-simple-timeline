@@ -8,68 +8,6 @@
         <div class="line-bottom" [ngClass]="{'active': item.active, 'hide': isLastItem(i)}" ></div>
       </div>
       <div class="block__content">
-        <h3>{{item.text}}</h3>
+        <h3 class="text" [ngClass]="{'text-active': item.active}">{{item.text}}</h3>
       </div>
   </div>
-
-  <!--<div class="block">
-    <div class="block__hidden"></div>
-    <div class="block__divider">
-      <div class="line-top"></div>
-      <div class="marker"></div>
-      <div class="line-bottom"></div>
-    </div>
-    <div class="block__content">
-      <h3>First Year</h3>
-    </div>
-  </div>
-
-  <div class="block block--flipped">
-    <div class="block__hidden"></div>
-    <div class="block__divider">
-      <div class="line-top"></div>
-      <div class="marker"></div>
-      <div class="line-bottom"></div>
-    </div>
-    <div class="block__content">
-      <h3>Seconed Year</h3>
-    </div>
-  </div>
-
-  <div class="block ">
-    <div class="block__hidden"></div>
-    <div class="block__divider">
-      <div class="line-top"></div>
-      <div class="marker"></div>
-      <div class="line-bottom"></div>
-    </div>
-    <div class="block__content">
-      <h3>Third Year</h3>
-    </div>
-  </div>
-
-  <div class="block block--flipped">
-    <div class="block__hidden"></div>
-    <div class="block__divider">
-      <div class="line-top"></div>
-      <div class="marker"></div>
-      <div class="line-bottom"></div>
-    </div>
-    <div class="block__content">
-      <h3>Fourth Year</h3>
-    </div>
-  </div>
-
-  <div class="block ">
-    <div class="block__hidden"></div>
-    <div class="block__divider">
-      <div class="line-top"></div>
-      <div class="marker"></div>
-      <div class="line-bottom"></div>
-    </div>
-    <div class="block__content">
-      <h3>Fifth Year</h3>
-    </div>
-  </div>
-</div>
--->

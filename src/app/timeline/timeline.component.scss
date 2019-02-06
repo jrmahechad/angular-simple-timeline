@@ -3,7 +3,7 @@
 }
 
 $active-color : #D21E2E;
-$inactive-color: grey;
+$inactive-color: rgba(grey, .5);
 $marker-diameter: 16px;
 $marker-before-diameter: 8px;
 $marker-after-diameter: 12px;
@@ -119,4 +119,12 @@ $background-color: #fff;
 
 .hide{
   background: $background-color
+}
+
+.text{
+  color: $inactive-color;
+}
+
+.text-active{
+  color: black;
 }
