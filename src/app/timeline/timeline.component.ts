@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./timeline.component.scss']
 })
 export class TimelineComponent implements OnInit {
-
   public items = [
     {
       text: 'First Year',
@@ -18,34 +17,36 @@ export class TimelineComponent implements OnInit {
       flipped: true
     },
     {
-      text: 'Third Year',
+      text: 'Third Year'
     },
     {
       text: 'Fourth Year',
       flipped: true
     },
     {
-      text: 'Fifth Year',
+      text: 'Fifth Year'
     }
-
   ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   checkPrevItemActive(index) {
     const prevIndex = index - 1;
-    return prevIndex > -1 ? this.items[prevIndex].active : false;
+    return prevIndex > -1 ? this.items[prevIndex].active && this.items[index].active : false;
+  }
+
+  checkNextItemActive(index) {
+    const nextIndex = index + 1;
+    return this.items[nextIndex]  ? this.items[nextIndex].active : false;
   }
 
   isLastItem(index) {
-    return index === this.items.length - 1 ;
+    return index === this.items.length - 1;
   }
 
   isFirstItem(index) {
     return index === 0;
   }
-
 }

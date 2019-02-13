@@ -5,7 +5,7 @@
       <div class="block__divider">
         <div class="line-top" [ngClass]="{'active': checkPrevItemActive(i), 'hide': isFirstItem(i)} " ></div>
         <div class="marker" [ngClass]="{'active': item.active}"></div>
-        <div class="line-bottom" [ngClass]="{'active': item.active, 'hide': isLastItem(i)}" ></div>
+        <div class="line-bottom" [ngClass]="{'active': checkNextItemActive(i), 'hide': isLastItem(i)}" ></div>
       </div>
       <div class="block__content">
         <h3 class="text" [ngClass]="{'text-active': item.active}">{{item.text}}</h3>
